@@ -284,9 +284,13 @@ header{
 	margin-bottom: -35px;
 	@media(max-width: @screen-sm-max){
 		background-color: @forest;
+		background-image: none;
 	}
 	.container-inner{
 		background: rgba(0,0,0,0.5);
+		@media(max-width: @screen-sm-max){
+			background: none;
+		}
 		.exp-sec{
 			@media(min-width: @screen-md-min){
 				margin-bottom: 35px;
