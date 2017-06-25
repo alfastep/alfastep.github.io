@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stephen's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="less/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!-- <div id="sticky"> -->
+            <nav class="nav navbar-default nav-header" id="sticky">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="name hidden-md hidden-lg">Stephen Alfa</div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+                    <ul class="text-center main-nav">
+                        <li class="home"><a href="#bio">Home</a></li>
+                        <!-- <li class="bio"><a href="#bio">Bio</a></li> -->
+                        <li class="exp"><a href="#exp">Experience</a></li>
+                        <li class="proj"><a href="#proj">Projects</a></li>
+                        <li class="contact"><a href="#contact">Contact</a></li>
+                        <li class="res"><a href="#">Resume</a></li>
+                        <li class="about"><a href="#">About Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div class="jumbotron" id="bio">
+    </div>
+    <div class="bio-container">
+        <div class="row bio-sec">
+            <div class="col-md-12 bio-sec-content">
+                <h1>I'M</h1>
+                <h1>STEPHEN</h1>
+                <h1>ALFA.</h1>
+                <br>
+                <div class="center">
+                    <img src="img/smile.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exp-container">
+        <div class="container-inner">
+            <div class="row exp-sec" id="exp">
+                <div class="col-md-12 exp-sec-content">
+                    <h1>Experience</h1>
+                    <!-- <hr> -->
+                </div>
+                <br class="hidden-xs hidden-sm">
+                <br class="hidden-xs hidden-sm">
+                <div class="row exp-mobile hidden-md hidden-lg center">
+                    <div class="col-sm-12 exp-paragraph">
+                    <time>Summer 2014</time> <b>Undergraduate Research Assistant, Communication Arts, Michigan State University</b>
+                    </div>
+                    <div class="col-sm-12 exp-paragraph">
+                        <time>Summer 2015</time> <b>Undergraduate Research Assistant, Computer Science Department, Michigan State University</b>
+                    </div>
+                    <div class="col-sm-12 exp-paragraph">
+                        <time>Sept 2016-</time> <b>Student Web Developer, Digital Scholarship and Curation, MSU Library</b><br>
+                    </div>
+                    <div class="col-sm-12 exp-paragraph">
+                        <time>Sept 2016-</time> <b>Student Web Developer, Digital Scholarship and Curation, MSU Library</b>
+                    </div>
+                </div>
+                <div class="timeline hidden-sm hidden-xs">
+                    <!-- <h1>Experience</h1> -->
+                  <ul>
+                    <li>
+                      <div>
+                        <time>Summer 2014</time><b>Undergraduate Research Assistant, Communication Arts, Michigan State University</b>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>Summer 2015</time> <b>Undergraduate Research Assistant, Computer Science Department, Michigan State University</b>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>Sept 2016-</time> <b>Student Web Developer, Digital Scholarship and Curation, MSU Library</b><br>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>Feb 2017-</time><b>Web Developer, SNWORKS</b>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <script type="text/javascript">
+                    (function() {
+
+                      'use strict';
+
+                      // define variables
+                      var items = document.querySelectorAll(".timeline li");
+
+                      // check if an element is in viewport
+                      // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+                      function isElementInViewport(el) {
+                        var rect = el.getBoundingClientRect();
+                        return (
+                          rect.top >= 0 &&
+                          rect.left >= 0 &&
+                          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                      }
+
+                      function callbackFunc() {
+                        for (var i = 0; i < items.length; i++) {
+                          if (isElementInViewport(items[i])) {
+                            items[i].classList.add("in-view");
+                          }
+                        }
+                      }
+
+                      // listen for events
+                      window.addEventListener("load", callbackFunc);
+                      window.addEventListener("resize", callbackFunc);
+                      window.addEventListener("scroll", callbackFunc);
+
+                    })();
+                </script>
+                <!-- <div class="row">
+                    <div class="col-md-3  exp-img">
+                        <img src="msulogo.jpeg">
+                    </div>
+                    <div class="col-md-9 exp-txt">
+                        <p><b>Undergraduate Research Assistant, Communication Arts, Michigan State University</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 exp-img">
+                        <img src="msulogo.jpeg">
+                    </div>
+                    <div class="col-md-9 exp-txt">
+                        <p><b>Undergraduate Research Assistant, Computer Science Department, Michigan State University</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3  exp-img">
+                        <img src="lib.png">
+                    </div>
+                    <div class="col-md-9 exp-txt">
+                        <p><b>Student Web Developer, Digital Scholarship and Curation, MSU Library</b><br>Conducted Quality Assurance (QA) on digitized library material. Restructured supplemental files associated with dissertations for ingest into MSU Libraries digital repository. Collaborated on writing Python script to compare the quality of Optical Character Recognition (OCR) using PyEnchant.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3  exp-img">
+                        <img src="snworks.png">
+                    </div>
+                    <div class="col-md-9 exp-txt">
+                        <p><b>Web Developer, SNWORKS</b></p>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="proj-container">
+        <div class="container">
+            <div class="row proj-sec" id="proj">
+                <div class="col-md-12 proj-sec-content">
+                    <h1>Projects</h1>
+                    <!-- <hr> -->
+                    <div class="row">
+                        <div class="col-md-4 img-col">
+                            <div class="img-holder">
+                                <a data-toggle="modal" href="#urcModal">
+                                    <img src="img/urc.png">
+                                </a>
+                                <!-- Modal -->
+                              <div class="modal" id="urcModal">
+                                <div class="modal-dialog">
+                                
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">The Collegian</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/urc.png">
+                                      <p>Some text in the modal.</p>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 img-col">
+                            <div class="img-holder">
+                                <a data-toggle="modal" href="#cavModal">
+                                    <img src="img/cav.png">
+                                </a>
+                                <div class="modal fade" id="cavModal">
+                                    <div class="modal-dialog">
+                                    
+                                      <!-- Modal content-->
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h4 class="modal-title">The Cavalier Daily</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/cav.png">
+                                          <p>Lorem ipsum dolor sit amet, tellus eget lobortis duis lacinia, vulputate orci maecenas turpis interdum nibh, aliquet tortor, mauris aliquet lacinia parturient arcu rutrum mi, cursus mattis phasellus non arcu nostra. Ut blandit, justo sem quam placerat, diam aliquam, vitae augue vehicula eros suspendisse, massa luctus. Libero praesent est bibendum integer, massa ante justo, vel arcu ipsum non vestibulum congue erat, id amet vel aliquam cum, accumsan feugiat eu consectetuer laoreet. Sit volutpat quisque, fusce arcu vel ultrices nulla magna ultricies, etiam metus est enim hymenaeos tortor nulla, eu etiam massa diam, maecenas integer. Ea velit nibh enim nonummy risus. Nunc ut bibendum adipiscing, purus ut sed tortor donec nec proin.</p>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 img-col-right">
+                            <div class="img-holder">
+                                <a data-toggle="modal" href="#dtcModal">
+                                    <img src="img/chronicle.png">
+                                </a>
+                                <div class="modal fade" id="dtcModal">
+                                <div class="modal-dialog">
+                                
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h4 class="modal-title">The Chronicle</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/chronicle.png">
+                                          <p>Some text in the modal.</p>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="container">
+            <div class="row contact-sec" id="contact">
+                <div class="col-md-12 contact-header">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+            <div class="row social-icons text-center">
+                <div class="col-sm-4">
+                    <a href="malito:stevoalfa6895@gmail.com">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x">
+                            </i>
+                            <i class="fa fa-envelope fa-stack-1x email"></i>
+                        </span>
+                        <p class="email">Email</p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x">
+                            </i>
+                            <i class="fa fa-linkedin-square fa-stack-1x linkedin"></i>
+                        </span>
+                        <p class="linkedin">LinkedIn</p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x">
+                            </i>
+                            <i class="fa fa-file-text fa-stack-1x resume"></i>
+                        </span>
+                        <p class="resume">Resume</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>     
+</body>
+<script type="text/javascript">
+    $('a').on('click', function(e){
+        e.preventDefault();
+        var targetID = $(this).attr('href')
+        var elementPosition = $(targetID).offset().top
+        $('html,body').animate({scrollTop: elementPosition},'slow');
+    }); 
+</script>
+</html>
