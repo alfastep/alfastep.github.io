@@ -35,6 +35,14 @@
                     </ul>
                 </div>
             </nav>
+            <script type="text/javascript">
+			    $('a').on('click', function(e){
+			        e.preventDefault();
+			        var targetID = $(this).attr('href')
+			        var elementPosition = $(targetID).offset().top
+			        $('html,body').animate({scrollTop: elementPosition},'slow');
+			    }); 
+			</script>
     </header>
     <div class="jumbotron hidden-sm hidden-xs" id="bio">
     </div>
@@ -297,12 +305,4 @@
         </div>
     </div>     
 </body>
-<script type="text/javascript">
-    $('a').on('click', function(e){
-        e.preventDefault();
-        var targetID = $(this).attr('href')
-        var elementPosition = $(targetID).offset().top
-        $('html,body').animate({scrollTop: elementPosition},'slow');
-    }); 
-</script>
 </html>
