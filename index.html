@@ -31,19 +31,19 @@
                         <li class="exp"><a href="#exp">Experience</a></li>
                         <li class="proj"><a href="#proj">Projects</a></li>
                         <li class="contact"><a href="#contact">Contact</a></li>
+                        <script type="text/javascript">
+						    $('a').on('click', function(e){
+						        e.preventDefault();
+						        var targetID = $(this).attr('href')
+						        var elementPosition = $(targetID).offset().top
+						        $('html,body').animate({scrollTop: elementPosition},'slow');
+						    }); 
+						</script>
                         <li class="res"><a href="/pdf/StephenAlfaResume.pdf">Resume</a></li>
                         <!-- <li class="about"><a href="#">About Me</a></li> -->
                     </ul>
                 </div>
             </nav>
-            <script type="text/javascript">
-			    $('a').on('click', function(e){
-			        e.preventDefault();
-			        var targetID = $(this).attr('href')
-			        var elementPosition = $(targetID).offset().top
-			        $('html,body').animate({scrollTop: elementPosition},'slow');
-			    }); 
-			</script>
     </header>
     <div class="jumbotron hidden-sm hidden-xs" id="bio">
     </div>
